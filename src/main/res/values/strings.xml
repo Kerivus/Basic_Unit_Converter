@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Basic Unit Converter</string>
+    <string name="Conversion">Conversion</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_history">History</string>
+    <string name="Conversion_answer">answer</string>
+    <string name="fromUnit">From Unit :</string>
+    <string name="toUnit">To Unit :</string>
+    <string name="Convert_button">Convert</string>
+    <string name="Search_Unit">Search by Unit</string>
+
+</resources>

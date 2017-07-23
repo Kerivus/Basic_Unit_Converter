@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.win10.unitconverter.ConversionActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/fromUnit_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="@string/fromUnit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/FromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@android:drawable/btn_dropdown"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Input_number_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AnswerConversion"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="number to convert"
+            android:inputType="numberDecimal"
+            android:textAlignment="viewEnd"/>
+
+        <TextView
+            android:id="@+id/fromSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.38"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toUnit_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="@string/toUnit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/ToSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FromSpinner"
+        android:layout_margin="12dp"
+        android:background="@android:drawable/btn_dropdown"/>
+
+    <TextView
+        android:id="@+id/AnswerConversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToSpinner"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:hint="@string/Conversion_answer"
+        android:gravity="right"
+        android:freezesText="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Input_number_edit_text"
+        android:layout_gravity="center"
+        android:text="@string/Convert_button"/>
+</LinearLayout>
